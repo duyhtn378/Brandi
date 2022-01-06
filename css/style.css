@@ -139,6 +139,12 @@ li button:before{
     font-family: "Pacifico";
     z-index: 100;
     font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.bandi-header-brand p {
+    margin: 0 0 10px 0;
+    
 }
 .bandi-header-brand  span {
     font-family: "Open Sans", sans-serif;
