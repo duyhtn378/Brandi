@@ -35,23 +35,18 @@ $(document).ready(function () {
         }
     });
     $("#btn-all").on("click", function() {
-        console.log("test")
         onBtnAllClick();
     })
     $("#btn-branding").on("click", function() {
-        console.log("test2")
         onBtnBradingClick();
     })
     $("#btn-web").on("click", function() {
-        console.log("test3")
         onBtnWebClick();
     })
     $("#btn-logo").on("click", function() {
-        console.log("test4")
         onBtnLogoClick();
     })
     $("#btn-photo").on("click", function() {
-        console.log("test5")
         onBtnPhotoClick();
     })
 
