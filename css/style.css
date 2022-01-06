@@ -294,8 +294,12 @@ li button:before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .works-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,49 +321,14 @@ li button:before{
     cursor: pointer;
 }
   
-
-.works-banner-1 {
-    background-image: url(../images/work-banner-1.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.load-card {
+    width: 100%;
+    height: 100%;
 }
-.works-banner-2 {
-    background-image: url(../images/work-banner-2.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.load-mot-card {
+    width: 100%;
+    height: auto;
 }
-.works-banner-3 {
-    background-image: url(../images/work-banner-3.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.works-banner-4 {
-    background-image: url(../images/work-banner-4.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.works-banner-5 {
-    background-image: url(../images/work-banner-5.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.works-banner-6 {
-    background-image: url(../images/work-banner-6.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.works-banner-7 {
-    background-image: url(../images/work-banner-7.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.works-banner-8 {
-    background-image: url(../images/work-banner-8.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-
 
 /* meet out team section css */
 
@@ -394,27 +363,6 @@ li button:before{
     position: relative;
     width: 278px;
     height: 370px;
-}
-
-.mot-pic-1 {
-    background: url(../images/mot-pic-1.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-.mot-pic-2 {
-    background: url(../images/mot-pic-2.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-.mot-pic-3 {
-    background: url(../images/mot-pic-3.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-.mot-pic-4 {
-    background: url(../images/mot-pic-4.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
 }
 .mot-banner {
     position: absolute;
