@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
 
     <!-- use for slick slider  -->
     <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
@@ -28,102 +28,233 @@
     <!-- use for count up -->
     <script src="./js/jquery.countup.min.js"></script>
     <script src="./js/index.js"></script>
-    
-    
+
+
 
 </head>
 
 <body>
     <!-- SECTION Bandi header -->
-    <section class="bandi-header-container">
+    <section class="bandi-header-navbar">
         <div class="bandi-header-decor"></div>
-        <div class="dot-location"></div>
-        <div class="single-item">
-            <div class="head-carousel">
-                <img src="./images/Header.png" alt="" class="carousel-img">
-                <div class="carousel-p">
-                    Meet <span class="carousel-p-sub-1">Brandi! </span>
-                    <p class="carousel-p-style carousel-p-sub-3"><span class="carousel-p-sub-2">/creative</span> one
-                        page templete</p>
-                    <p class="carousel-p-style carousel-p-sub-4"><span class="carousel-p-sub-2">-</span> We are team of
-                        professionals <span class="carousel-p-sub-2">-</span></p>
-                    <img src="./images/Social.png" alt="" class="carousel-social">
-                </div>
+        <div class="bandi-header-content">
+            <div class="bandi-header-brand text-white">
+                <p> 
+                    Brandi &nbsp;
+                    <span>
+                        | I'am your tag line
+                    </span>
+                </p>
             </div>
-            <div class="head-carousel">
-                <img src="./images/Header.png" alt="" class="carousel-img">
-                <div class="carousel-p">
-                    Meet <span class="carousel-p-sub-1">Brandi! </span>
-                    <p class="carousel-p-style carousel-p-sub-3"><span class="carousel-p-sub-2">/creative</span> one
-                        page templete</p>
-                    <p class="carousel-p-style carousel-p-sub-4"><span class="carousel-p-sub-2">-</span> We are team of
-                        professionals <span class="carousel-p-sub-2">-</span></p>
-                    <img src="./images/Social.png" alt="" class="carousel-social">
-                </div>
-            </div>
-            <div class="head-carousel">
-                <img src="./images/Header.png" alt="" class="carousel-img">
-                <div class="carousel-p">
-                    Meet <span class="carousel-p-sub-1">Brandi! </span>
-                    <p class="carousel-p-style carousel-p-sub-3"><span class="carousel-p-sub-2">/creative</span> one
-                        page templete</p>
-                    <p class="carousel-p-style carousel-p-sub-4"><span class="carousel-p-sub-2">-</span> We are team of
-                        professionals <span class="carousel-p-sub-2">-</span></p>
-                    <img src="./images/Social.png" alt="" class="carousel-social">
-                </div>
-            </div>
-        </div>
-        <div class="bandi-header-navbar">
-            <div class="bandi-header-content">
-                <div class="bandi-header-brand">
-                    <p> Brandi &nbsp;<span>| I'am your tag line</span></p>
-                </div>
-                <ul class="header-brand-list">
-                    <li>Home</li>
-                    <li>Features</li>
-                    <li>Works</li>
-                    <li>Team</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
+            <ul class="header-brand-list">
+                <li>
+                    <a class="text-white" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="text-white" href="#features-section">Features</a>
+                </li>
+                <li>
+                    <a class="text-white" href="#works-section">Works</a>
+                </li>
+                <li>
+                    <a class="text-white" href="#mot-section">Team</a>
+                </li>
+                <li>
+                    <a class="text-white" href="#contact-section">Contact</a>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- SECTION Bandi header end-->
 
 
 
+    <!-- SECTION intro banner -->
+    <section id="first-banner" class="bandi-header-container">
+        <div class="dot-location"></div>
+        <div class="header-carousel">
+            <div class="carousel-item">
+                <img src="./images/Header.png" alt="" class="carousel-img">
+
+                <div class="carousel-p">
+                    Meet
+                    <span class="carousel-p-sub-1">
+                        Brandi!
+                    </span>
+
+                    <h1 class="carousel-p-style carousel-p-sub-3">
+                        <span class="carousel-p-sub-2">
+                            /creative
+                        </span>
+                        one page templete
+                    </h1>
+                    <h2 class="carousel-p-style carousel-p-sub-4">
+                        <span class="carousel-p-sub-2">
+                            -
+                        </span>
+                        We are a team of professionals
+                        <span class="carousel-p-sub-2">
+                            -
+                        </span>
+                    </h2>
+                    <div class="carousel-social">
+                        <a href="">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-dribbble fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/Header.png" alt="" class="carousel-img">
+
+                <div class="carousel-p">
+                    Meet
+                    <span class="carousel-p-sub-1">
+                        Brandi!
+                    </span>
+
+                    <h1 class="carousel-p-style carousel-p-sub-3">
+                        <span class="carousel-p-sub-2">
+                            /creative
+                        </span>
+                        one page templete
+                    </h1>
+                    <h2 class="carousel-p-style carousel-p-sub-4">
+                        <span class="carousel-p-sub-2">
+                            -
+                        </span>
+                        We are a team of professionals
+                        <span class="carousel-p-sub-2">
+                            -
+                        </span>
+                    </h2>
+                    <div class="carousel-social">
+                        <a href="">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-dribbble fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/Header.png" alt="" class="carousel-img">
+
+                <div class="carousel-p">
+                    Meet
+                    <span class="carousel-p-sub-1">
+                        Brandi!
+                    </span>
+
+                    <h1 class="carousel-p-style carousel-p-sub-3">
+                        <span class="carousel-p-sub-2">
+                            /creative
+                        </span>
+                        one page templete
+                    </h1>
+                    <h2 class="carousel-p-style carousel-p-sub-4">
+                        <span class="carousel-p-sub-2">
+                            -
+                        </span>
+                        We are a team of professionals
+                        <span class="carousel-p-sub-2">
+                            -
+                        </span>
+                    </h2>
+                    <div class="carousel-social">
+                        <a href="">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g fa-2x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-dribbble fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- SECTION Bandi intro banner end-->
+
+
+
     <!-- SECTION bandi features -->
-    <section class="features-container">
+    <section class="features-container" id="features-section">
         <div class="features-content">
-            <p class="features-header text-green">FEATURES</p>
+            <h2 class="features-header text-green">
+                FEATURES
+            </h2>
+
             <img src="./images/heart-decor.png" alt="">
+
             <div class="features-group-card">
                 <div class="features-card">
                     <img src="./images/feature-icon-1.png" alt="" class="features-icon">
-                    <p class="features-card-text">Branding
-                        <br><span>Sed ut perspiciatis unde omnis iste natus error sit
-                            <br> voluptatem accusantium doloremque laudantium,
-                            <br> totam rem aperiam, eaque ipsa quae ab illo
-                            <br> inventore</span>
-                    </p>
+
+                    <div class="features-card-box">
+                        <h3 class="features-card-title">
+                            Branding
+                        </h3>
+                        <p class="features-card-text">
+                            Sed ut perspiciatis unde omnis iste natus error sit<br>
+                            voluptatem accusantium doloremque laudantium,<br>
+                            totam rem aperiam, eaque ipsa quae ab illo<br>
+                            inventore
+                        </p>
+                    </div>
+                   
                 </div>
                 <div class="features-card">
                     <img src="./images/feature-icon-2.png" alt="" class="features-icon">
-                    <p class="features-card-text">Development
-                        <br><span>Sed ut perspiciatis unde omnis iste natus error sit
-                            <br> voluptatem accusantium doloremque laudantium,
-                            <br> totam rem aperiam, eaque ipsa quae ab illo
-                            <br> inventore</span>
-                    </p>
+
+                    <div class="features-card-box">
+                        <h3 class="features-card-title">
+                            Development
+                        </h3>
+                        <p class="features-card-text">
+                            Sed ut perspiciatis unde omnis iste natus error sit<br>
+                            voluptatem accusantium doloremque laudantium,<br>
+                            totam rem aperiam, eaque ipsa quae ab illo<br>
+                            inventore
+                        </p>
+                    </div>
                 </div>
                 <div class="features-card">
                     <img src="./images/feature-icon-3.png" alt="" class="features-icon">
-                    <p class="features-card-text">Consulting
-                        <br><span>Sed ut perspiciatis unde omnis iste natus error sit
-                            <br> voluptatem accusantium doloremque laudantium,
-                            <br> totam rem aperiam, eaque ipsa quae ab illo
-                            <br> inventore</span>
-                    </p>
+
+                    <div class="features-card-box">
+                        <h3 class="features-card-title">
+                            Consulting
+                        </h3>
+                        <p class="features-card-text">
+                            Sed ut perspiciatis unde omnis iste natus error sit<br>
+                            voluptatem accusantium doloremque laudantium,<br>
+                            totam rem aperiam, eaque ipsa quae ab illo<br>
+                            inventore
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,91 +263,129 @@
 
 
     <!-- SECTION bandi works -->
-    <section class="works-container">
+    <section class="works-container" id="works-section">
         <div class="works-content">
-            <p class="works-header text-green">WORK</p>
+            <h2 class="works-header text-green">
+                WORKS
+            </h2>
+
             <img src="./images/heart-decor.png" alt="">
-            <p class="mot-sub-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem
-                <br> aperiam, eaque ipsa quae ab illo inventore
+
+            <p class="mot-sub-content">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam<br>
+                rem aperiam, eaque ipsa quae ab illo inventore
             </p>
             <ul class="works-choose-tag">
-                <li id="btn-all">All</li>
-                <li id="btn-branding">Branding</li>
-                <li id="btn-web">Web</li>
-                <li id="btn-logo">Logo Design</li>
-                <li id="btn-photo">Photography</li>
+                <li class="btn-all btn-choose">
+                    All
+                </li>
+                <li class="btn-branding">
+                    Branding
+                </li>
+                <li class="btn-web">
+                    Web
+                </li>
+                <li class="btn-logo">
+                    Logo Design
+                </li>
+                <li class="btn-photo">
+                    Photography
+                </li>
             </ul>
             <div class="works-group-card">
                 <div class="works-card" id="b-1">
                     <img src="./images/work-banner-1.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
                 <div class="works-card" id="b-2">
                     <img src="./images/work-banner-2.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
                 <div class="works-card" id="b-3">
                     <img src="./images/work-banner-3.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
                 <div class="works-card" id="w-1">
                     <img src="./images/work-banner-4.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
                 <div class="works-card" id="w-2">
                     <img src="./images/work-banner-5.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
                 <div class="works-card" id="l-1">
                     <img src="./images/work-banner-6.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
                 <div class="works-card" id="b-4">
                     <img src="./images/work-banner-7.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
                 <div class="works-card" id="p-1">
                     <img src="./images/work-banner-8.png" alt="" class="load-card">
+
                     <div class="works-banner">
                         <img src="./images/icon -Eye.png" alt="">
-                        <p>Labore et dolore magnam
-                            <br> Photography
+
+                        <p>
+                            Labore et dolore magnam<br>
+                            <span>Photography</span>
                         </p>
                     </div>
                 </div>
@@ -228,93 +397,118 @@
 
 
 
-    
+
 
 
     <!-- SECTION bandi meet our team -->
-    <section class="mot-container">
+    <section class="mot-container" id="mot-section">
         <div class="mot-content">
-            <p class="mot-header text-green">MEET OUT TEAM</p>
+            <h2 class="mot-header text-green">
+                MEET OUT TEAM
+            </h2>
+
             <img src="./images/heart-decor.png" alt="">
-            <p class="mot-sub-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem aperiam, eaque
-                <br> ipsa quae ab illo inventore
+
+            <p class="mot-sub-content">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam<br>
+                rem aperiam, eaque ipsa quae ab illo inventore
             </p>
             <div class="mot-group-card">
                 <div class="mot-card" data-aos="fade-up">
                     <img src="./images/mot-pic-1.png" alt="" class="load-mot-card">
+
                     <div class="mot-banner">
-                        <p>Nemo enim ipsam
-                            <br>voluptatem quia voluptas <br>
-                            <span>sit aspernatur aut odit aut fugit,
-                                <br> sed quia consequuntur
-                                <br>magni dolores eos qui ratione
-                                <br> voluptatem.
-                            </span>
+                        <p>
+                            Nemo enim ipsam<br>
+                            voluptatem quia voluptas <br>
                         </p>
+                        <span>
+                            sit aspernatur aut odit aut<br>
+                            fugit, sed quia consequuntur<br>
+                            magni dolores eos qui ratione<br>
+                            voluptatem.
+                        </span>
                         <div class="mot-icon">
                             <div>
-                                <img src="./images/Twitter.png" alt="">
+                                <a href="">
+                                    <img src="./images/Twitter.png" alt="">
+                                </a>
                             </div>
                             <div>
-                                <img src="./images/FB.png" alt="">
+                                <a href="">
+                                    <img src="./images/FB.png" alt="">
+                                </a>
                             </div>
                             <div>
-                                <img src="./images/G+.png" alt="">
+                                <a href="">
+                                    <img src="./images/G+.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <p class="mot-card-brand">John Filmr Doe
-                        <br><span>Managing Director</span>
+                    <p class="mot-card-brand">
+                        John Filmr Doe<br>
+                        <span>
+                            Managing Director
+                        </span>
                     </p>
                 </div>
-                <div class="mot-card"  data-aos="fade-up">
+                <div class="mot-card" data-aos="fade-up">
                     <img src="./images/mot-pic-2.png" alt="" class="load-mot-card">
+
                     <div class="mot-banner">
-                        <p>Nemo enim ipsam
-                            <br>voluptatem quia voluptas <br>
-                            <span>sit aspernatur aut odit aut fugit,
-                                <br> sed quia consequuntur
-                                <br>magni dolores eos qui ratione
-                                <br> voluptatem.
-                            </span>
+                        <p>
+                            Nemo enim ipsam<br>
+                            voluptatem quia voluptas <br>
                         </p>
+                        <span>
+                            sit aspernatur aut odit aut<br> 
+                            fugit, sed quia consequuntur<br>
+                            magni dolores eos qui ratione<br> 
+                            voluptatem.
+                        </span>
                         <div class="mot-icon">
                             <div>
-                                <img src="./images/Twitter.png" alt="">
+                                <a href=""><img src="./images/Twitter.png" alt=""></a>
                             </div>
                             <div>
-                                <img src="./images/FB.png" alt="">
+                                <a href=""><img src="./images/FB.png" alt=""></a>
                             </div>
                             <div>
-                                <img src="./images/G+.png" alt="">
+                                <a href=""><img src="./images/G+.png" alt=""></a>
                             </div>
                         </div>
                     </div>
-                    <p class="mot-card-brand">Chystine Hineu
-                        <br><span>Lead Designer</span>
+                    <p class="mot-card-brand">
+                        Chystine Hineu<br>
+                        <span>
+                            Lead Designer
+                        </span>
                     </p>
                 </div>
-                <div class="mot-card"  data-aos="fade-up">
+                <div class="mot-card" data-aos="fade-up">
                     <img src="./images/mot-pic-3.png" alt="" class="load-mot-card">
+
                     <div class="mot-banner">
-                        <p>Nemo enim ipsam
-                            <br>voluptatem quia voluptas <br>
-                            <span>sit aspernatur aut odit aut fugit,
-                                <br> sed quia consequuntur
-                                <br>magni dolores eos qui ratione
-                                <br> voluptatem.
-                            </span>
+                        <p>
+                            Nemo enim ipsam<br>
+                            voluptatem quia voluptas <br>
                         </p>
+                        <span>
+                            sit aspernatur aut odit aut<br> 
+                            fugit, sed quia consequuntur<br> 
+                            magni dolores eos qui ratione<br> 
+                            voluptatem.
+                        </span>
                         <div class="mot-icon">
                             <div>
-                                <img src="./images/Twitter.png" alt="">
+                                <a href=""><img src="./images/Twitter.png" alt=""></a>
                             </div>
                             <div>
-                                <img src="./images/FB.png" alt="">
+                                <a href=""><img src="./images/FB.png" alt=""></a>
                             </div>
                             <div>
-                                <img src="./images/G+.png" alt="">
+                                <a href=""><img src="./images/G+.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -322,31 +516,37 @@
                         <br><span>Lead Developer</span>
                     </p>
                 </div>
-                <div class="mot-card"  data-aos="fade-up">
+                <div class="mot-card" data-aos="fade-up">
                     <img src="./images/mot-pic-4.png" alt="" class="load-mot-card">
+
                     <div class="mot-banner">
-                        <p>Nemo enim ipsam
-                            <br>voluptatem quia voluptas <br>
-                            <span>sit aspernatur aut odit aut fugit,
-                                <br> sed quia consequuntur
-                                <br>magni dolores eos qui ratione
-                                <br> voluptatem.
-                            </span>
+                        <p>
+                            Nemo enim ipsam<br>
+                            voluptatem quia voluptas <br>
                         </p>
+                        <span>
+                            sit aspernatur aut odit aut<br> 
+                            fugit, sed quia consequuntur<br>
+                            magni dolores eos qui ratione<br> 
+                            voluptatem.
+                        </span>
                         <div class="mot-icon">
                             <div>
-                                <img src="./images/Twitter.png" alt="">
+                                <a href=""><img src="./images/Twitter.png" alt=""></a>
                             </div>
                             <div>
-                                <img src="./images/FB.png" alt="">
+                                <a href=""><img src="./images/FB.png" alt=""></a>
                             </div>
                             <div>
-                                <img src="./images/G+.png" alt="">
+                                <a href=""><img src="./images/G+.png" alt=""></a>
                             </div>
                         </div>
                     </div>
-                    <p class="mot-card-brand">Steve Flaulkin
-                        <br><span>Sr.UI Designer</span>
+                    <p class="mot-card-brand">
+                        Steve Flaulkin<br>
+                        <span>
+                            Sr.UI Designer
+                        </span>
                     </p>
                 </div>
             </div>
@@ -359,85 +559,132 @@
     <!-- SECTION bandi facts -->
     <section class="facts-container">
         <div class="facts-content">
-            <p class="facts-header text-green">SOME FUN FACTS</p>
+            <h2 class="facts-header text-green">
+                SOME FUN FACTS
+            </h2>
+
             <img src="./images/light-heart-decor.png" alt="">
+
             <div class="facts-group-card">
-                <div class="facts-card"  data-aos="fade-up">
+                <div class="facts-card" data-aos="fade-up">
                     <img src="./images/clock.png" alt="">
-                    <p class="counter">3200 </p>
-                    <span>HOURS OF WORK</span>
+
+                    <p class="counter">
+                        3200 
+                    </p>
+                    <span>
+                        HOURS OF WORK
+                    </span>
                 </div>
                 <div class="facts-card" data-aos="fade-up">
                     <img src="./images/friend.png" alt="">
-                    <p class="counter">120 </p>
-                    <span>SATISFIED CLINETS</span>
+
+                    <p class="counter">
+                        120
+                    </p>
+                    <span>
+                        SATISFIED CLINETS
+                    </span>
                 </div>
                 <div class="facts-card" data-aos="fade-up">
                     <img src="./images/rocket.png" alt="">
-                    <p class="counter">360 </p>
-                    <span>PROJECTS DELIVERED</span>
+
+                    <p class="counter">
+                        360 
+                    </p>
+                    <span>
+                        PROJECTS DELIVERED
+                    </span>
                 </div>
                 <div class="facts-card" data-aos="fade-up">
                     <img src="./images/cup.png" alt="">
-                    <p class="counter">42 </p>
-                    <span>AWARDS WON</span>
+
+                    <p class="counter">
+                        42 
+                    </p>
+                    <span>
+                        AWARDS WON
+                    </span>
                 </div>
             </div>
         </div>
     </section>
 
-   
+
 
     <!-- SECTION bandi facts end -->
 
 
     <!-- SECTION bandi discuss -->
-    <section class="discuss-container">
+    <section class="discuss-container" id="contact-section">
         <div class="discuss-content">
-            <p class="discuss-header text-green">LET'S DISCUSS</p>
+            <h2 class="discuss-header text-green">
+                LET'S DISCUSS
+            </h2>
+
             <img src="./images/heart-decor.png" alt="">
-            <p class="discuss-sub-content">Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+
+            <p class="discuss-sub-content">
+                Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            </p>
             <div class="discuss-group-card">
                 <div class="discuss-card-text">
-                    <p>Cras at ultrices erat, sed 
-                        <br>vulputate!
-                        <br><span>
-                           <br>2345 Setwant natrer, 1234, 
-                           <br>Washington. United States.
-                           <br>(401) 1234 567
-                           <br>hello@brandi.com
-                           <br>ww.brandi.com
+                    <p>
+                        Cras at ultrices erat, sed<br>
+                        vulputate!<br><br>
+                        <span>
+                            2345 Setwant natrer, 1234,<br>
+                            Washington. United States.<br>
+                            (401) 1234 567<br>
+                            hello@brandi.com<br>
+                            ww.brandi.com
                         </span>
                     </p>
                 </div>
                 <div class="discuss-input-form">
-                    <p>Say Hello!</p>
+                    <h3>
+                        Say Hello!
+                    </h3>
                     <div class="input-row-1">
                         <div class="input-text-group">
                             <input type="text">
-                            <p>Name</p>
+                            <label>
+                                Name
+                            </label>
                         </div>
                         <div class="input-text-group">
                             <input type="text">
-                            <p>Email</p>
+                            <label>
+                                Email
+                            </label>
                         </div>
                     </div>
                     <div class="input-row-1">
                         <div class="input-text-group sub">
                             <input type="text">
-                            <p>Message</p>
+                            <label>
+                                Message
+                            </label>
                         </div>
                     </div>
                     <div class="input-row-1 discuss-button">
-                        <p>Send Message</p>
+                        <p>
+                            Send Message
+                        </p>
                     </div>
                 </div>
                 <div class="discuss-social-icon">
-                    <img src="./images/Social-discuss.png" alt="">
+                    <i class="fab fa-behance fa-lg"></i>
+                    <i class="fab fa-twitter fa-lg"></i>
+                    <i class="fab fa-dribbble fa-lg"></i>
+                    <i class="fab fa-google-plus-g fa-lg"></i>
+                    <i class="fab fa-facebook-square fa-lg"></i>
+                    <i class="fab fa-facebook-square fa-lg"></i>
                 </div>
             </div>
         </div>
         <img src="./images/Map.png" alt="" class="discuss-map">
+        
     </section>
     <!-- SECTION bandi discuss end -->
 
@@ -447,23 +694,32 @@
     <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-text footer-brand">
-                <p>Brandi</p>
-                <span>eusmod tempor incididunt ut labore et dolore 
-                    <br>magna aliqua. Ut enim ad minim veniam, quis 
-                    <br>nostrud exercitation ullamco laboris nisi ut 
-                    <br>aliquip ex ea commodo 
-                    <br>consequat.</span>
+                <h2>
+                    Brandi
+                </h2>
+                <p>eusmod tempor incididunt ut labore et<br>
+                    dolore magna aliqua. Ut enim ad minim<br>
+                    veniam, quis nostrud exercitation ullamco<br>
+                    laboris nisi ut aliquip ex ea commodo<br>
+                    consequat.</p>
             </div>
             <div class="footer-text footer-sub">
-                <p>Subcribe</p>
+                <h2>
+                    Subcribe
+                </h2>
                 <div class="subcribe-button">
-                    <p>→</p>
+                    <input type="text">
+                    <button>→</button>
                 </div>
-                <span>eusmod tempor incididunt ut labore et dolore 
-                    <br>magna aliqua.</span>
+                <p>
+                    eusmod tempor incididunt ut labore et dolore<br>
+                    magna aliqua.
+                </p>
             </div>
             <div class="footer-text footer-sub">
-                <p>Explore</p>
+                <h2>
+                    Explore
+                </h2>
                 <div class="footer-sub-list">
                     <ul>
                         <li>Envato</li>
@@ -474,16 +730,25 @@
                     <ul>
                         <li>Themeforest</li>
                         <li>Microsoft</li>
-                        <li>Microsoft</li>
+                        <li>Google</li>
                         <li>Yahoo</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-text footer-sub">
-                <p class="main">Created with <img src="./images/heart-footer-icon.png" alt="">  by <span>themecurve</span> , 
-                    <br> exclusive for kreativeshowcase</p>
+                <p class="main">
+                    Created with&nbsp; 
 
-                <span class="last">© 2014 Brandi. All Rights Reserved.</span>
+                    <img src="./images/heart-footer-icon.png" alt="">
+
+                    &nbsp; by
+                    <span>
+                        themecurve<br>
+                    </span> ,
+                    exclusive for kreativeshowcase
+                </p>
+
+                <p class="last">© 2014 Brandi. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

@@ -1,17 +1,21 @@
 $(document).ready(function () {
-    $('.single-item').slick({
+    //banner slider
+    $('.header-carousel').slick({
         dots: true,
         appendDots: $('.dot-location'),
         infinite: true,
         autoplay: true,
     })
+    //SOME FUN FACT count up
     $('.counter').countUp({
         'time': 3000,
         'delay': 10
     });
+    //Fade effect
     AOS.init({
         easing: 'ease-in-quad',
     });
+    //Function Handle change header style when scroll throw a banner
     $(document).scroll(function() {
         var headerEle = $(".bandi-header-container").outerHeight();
         var featrueEle = $(".features-container").outerHeight();
@@ -23,36 +27,42 @@ $(document).ready(function () {
 
          $(".bandi-header-decor").css("background-color","white");
          $(".bandi-header-decor").css("opacity","10");
-         $(".bandi-header-navbar").css("color","black");
-         $(".header-brand-list").css("color","black");
+         $(".bandi-header-brand").removeClass("text-white");
+         $(".bandi-header-brand").addClass("text-dark");
+         $(".header-brand-list a").removeClass("text-white");
+         $(".header-brand-list a").addClass("text-dark");
 
         }else {
 
          $(".bandi-header-decor").css("background-color","rgb(16, 22, 54)");
          $(".bandi-header-decor").css("opacity","0.2");
-         $(".bandi-header-navbar").css("color","white");
-         $(".header-brand-list").css("color","white");
+         $(".bandi-header-brand").addClass("text-white");
+         $(".bandi-header-brand").removeClass("text-dark");
+         $(".header-brand-list a").addClass("text-white");
+         $(".header-brand-list a").removeClass("text-dark");
         }
     });
-    $("#btn-all").on("click", function() {
+    //function handle event when click filter buttons
+    $(".btn-all").on("click", function() {
         onBtnAllClick();
     })
-    $("#btn-branding").on("click", function() {
+    $(".btn-branding").on("click", function() {
         onBtnBradingClick();
     })
-    $("#btn-web").on("click", function() {
+    $(".btn-web").on("click", function() {
         onBtnWebClick();
     })
-    $("#btn-logo").on("click", function() {
+    $(".btn-logo").on("click", function() {
         onBtnLogoClick();
     })
-    $("#btn-photo").on("click", function() {
+    $(".btn-photo").on("click", function() {
         onBtnPhotoClick();
     })
 
 
     onBtnBradingClick = () => {
         let identify = "b"
+        
         $("#b-1").css("display","block");
         $("#b-2").css("display","block");
         $("#b-3").css("display","block");
@@ -61,6 +71,10 @@ $(document).ready(function () {
         $("#l-1").css("display","none");
         $("#p-1").css("display","none");
         $("#b-4").css("display","block");
+        // bannerData = ["data from DB"]
+        // let filterdata = bannerData.filter((data) => {
+        //     data.id.includes("b")
+        // })
 
         setBtnColor(identify);
     }
@@ -112,118 +126,42 @@ $(document).ready(function () {
         $("#b-4").css("display","none");
         setBtnColor(identify);
     }
-
-
+    //function change to button style when click
     setBtnColor = (paramIdentify) => {
         if(paramIdentify == "b") {
-            $("#btn-all").css("color","rgb(6, 32, 51)");
-            $("#btn-all").css("padding","0");
-            $("#btn-all").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-web").css("color","rgb(6, 32, 51)");
-            $("#btn-web").css("padding","0");
-            $("#btn-web").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-logo").css("color","rgb(6, 32, 51)");
-            $("#btn-logo").css("padding","0");
-            $("#btn-logo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-photo").css("color","rgb(6, 32, 51)");
-            $("#btn-photo").css("padding","0");
-            $("#btn-photo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-branding").css("color","white");
-            $("#btn-branding").css("padding","5px 20px 5px 20px");
-            $("#btn-branding").css("background-color","rgb(14, 180, 147)");
-            $("#btn-branding").css("border-radius","5px");
+            $(".btn-all").removeClass("btn-choose");
+            $(".btn-web").removeClass("btn-choose");
+            $(".btn-logo").removeClass("btn-choose");
+            $(".btn-photo").removeClass("btn-choose");
+            $(".btn-branding").addClass("btn-choose");
         }
         if(paramIdentify == "a") {
-            $("#btn-branding").css("color","rgb(6, 32, 51)");
-            $("#btn-branding").css("padding","0");
-            $("#btn-branding").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-web").css("color","rgb(6, 32, 51)");
-            $("#btn-web").css("padding","0");
-            $("#btn-web").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-logo").css("color","rgb(6, 32, 51)");
-            $("#btn-logo").css("padding","0");
-            $("#btn-logo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-photo").css("color","rgb(6, 32, 51)");
-            $("#btn-photo").css("padding","0");
-            $("#btn-photo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-all").css("color","white");
-            $("#btn-all").css("padding","5px 20px 5px 20px");
-            $("#btn-all").css("background-color","rgb(14, 180, 147)");
-            $("#btn-all").css("border-radius","5px");
+            $(".btn-all").addClass("btn-choose");
+            $(".btn-web").removeClass("btn-choose");
+            $(".btn-logo").removeClass("btn-choose");
+            $(".btn-photo").removeClass("btn-choose");
+            $(".btn-branding").removeClass("btn-choose");
         }
         if(paramIdentify == "w") {
-            $("#btn-branding").css("color","rgb(6, 32, 51)");
-            $("#btn-branding").css("padding","0");
-            $("#btn-branding").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-all").css("color","rgb(6, 32, 51)");
-            $("#btn-all").css("padding","0");
-            $("#btn-all").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-logo").css("color","rgb(6, 32, 51)");
-            $("#btn-logo").css("padding","0");
-            $("#btn-logo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-photo").css("color","rgb(6, 32, 51)");
-            $("#btn-photo").css("padding","0");
-            $("#btn-photo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-web").css("color","white");
-            $("#btn-web").css("padding","5px 20px 5px 20px");
-            $("#btn-web").css("background-color","rgb(14, 180, 147)");
-            $("#btn-web").css("border-radius","5px");
+            $(".btn-all").removeClass("btn-choose");
+            $(".btn-web").addClass("btn-choose");
+            $(".btn-logo").removeClass("btn-choose");
+            $(".btn-photo").removeClass("btn-choose");
+            $(".btn-branding").removeClass("btn-choose");
         }
         if(paramIdentify == "l") {
-            $("#btn-branding").css("color","rgb(6, 32, 51)");
-            $("#btn-branding").css("padding","0");
-            $("#btn-branding").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-all").css("color","rgb(6, 32, 51)");
-            $("#btn-all").css("padding","0");
-            $("#btn-all").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-web").css("color","rgb(6, 32, 51)");
-            $("#btn-web").css("padding","0");
-            $("#btn-web").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-photo").css("color","rgb(6, 32, 51)");
-            $("#btn-photo").css("padding","0");
-            $("#btn-photo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-logo").css("color","white");
-            $("#btn-logo").css("padding","5px 20px 5px 20px");
-            $("#btn-logo").css("background-color","rgb(14, 180, 147)");
-            $("#btn-logo").css("border-radius","5px");
+            $(".btn-all").removeClass("btn-choose");
+            $(".btn-web").removeClass("btn-choose");
+            $(".btn-logo").addClass("btn-choose");
+            $(".btn-photo").removeClass("btn-choose");
+            $(".btn-branding").removeClass("btn-choose");
         }
         if(paramIdentify == "p") {
-            $("#btn-branding").css("color","rgb(6, 32, 51)");
-            $("#btn-branding").css("padding","0");
-            $("#btn-branding").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-all").css("color","rgb(6, 32, 51)");
-            $("#btn-all").css("padding","0");
-            $("#btn-all").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-web").css("color","rgb(6, 32, 51)");
-            $("#btn-web").css("padding","0");
-            $("#btn-web").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-logo").css("color","rgb(6, 32, 51)");
-            $("#btn-logo").css("padding","0");
-            $("#btn-logo").css("background-color","rgb(244, 247, 249)");
-    
-            $("#btn-photo").css("color","white");
-            $("#btn-photo").css("padding","5px 20px 5px 20px");
-            $("#btn-photo").css("background-color","rgb(14, 180, 147)");
-            $("#btn-photo").css("border-radius","5px");
+            $(".btn-all").removeClass("btn-choose");
+            $(".btn-web").removeClass("btn-choose");
+            $(".btn-logo").removeClass("btn-choose");
+            $(".btn-photo").addClass("btn-choose");
+            $(".btn-branding").removeClass("btn-choose");
         }
     }
 });
