@@ -7,6 +7,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 5000,
         pauseOnFocus: false,
+        pauseOnHover: false,
     })
     //SOME FUN FACT count up
     $('.counter').countUp({
