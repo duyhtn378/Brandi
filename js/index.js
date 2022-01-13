@@ -5,6 +5,8 @@ $(document).ready(function () {
         appendDots: $('.dot-location'),
         infinite: true,
         autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnFocus: false,
     })
     //SOME FUN FACT count up
     $('.counter').countUp({

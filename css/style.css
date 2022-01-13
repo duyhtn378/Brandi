@@ -3,8 +3,7 @@
 
 body {
     max-width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -107,6 +106,7 @@ li button:before{
     font-family: "Open Sans", sans-serif;
     text-align: center;
     font-weight: 100;
+    z-index: 10;
 }
 .carousel-p-sub-1 {
     font-weight: bold;
@@ -156,6 +156,7 @@ li button:before{
     font-size: 30px;
     display: flex;
     align-items: center;
+    letter-spacing: 0.02em;
 }
 .bandi-header-brand p {
     margin: 0 0 10px 0;
@@ -469,6 +470,10 @@ li button:before{
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   color: #fff;
+}
+.mot-icon i:hover {
+    color: rgb(14, 180, 147);
 }
 
 
@@ -697,6 +702,8 @@ li button:before{
     font-family: "Pacifico";
     font-size: 30px;
     color: #fff;
+    letter-spacing: 0.02em;
+
 }
 .footer-sub h2 {
     font-family: "Open Sans", sans-serif;
@@ -728,6 +735,7 @@ li button:before{
     border: none;
     background-color: rgb(14, 180, 147);
     border-radius: 5px;
+    color: #fff;
 }
 .subcribe-button button {
     position: absolute;
